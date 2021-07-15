@@ -8,10 +8,10 @@
 /* Body  */
 body{
     font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
 }
 
 .container{
-    background-color: violet;
     height: calc(100vh - 90px);
     display: flex;
 }
@@ -20,8 +20,13 @@ body{
     width: 15%;
     display: flex;
     flex-direction: column;
-    background-color: yellow;
-    padding:20px 70px 0 20px;
+    background-color: #000000;
+    padding:20px 20px 0 20px;
+    justify-content: space-between;
+}
+
+h3{
+    color: white;
 }
 
 .content{
@@ -37,14 +42,18 @@ body{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #080b12;
 }
 
 .playlist{
     height: 90%;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: #141922;
+    overflow-y: scroll;
 }
 
+.nav-footer{
+    align-items: flex-end;
+}
 
 .music-bar{
     display: flex;
@@ -53,4 +62,50 @@ body{
     height: 90px;
     z-index: 1;
     background-color: #282828;
+}
+
+.logo{
+    margin-bottom: 15px;
+}
+ul{
+    list-style-type: none;
+}
+
+li{
+    padding-bottom: 15px;
+}
+
+.grey{
+    color: grey;
+}
+
+.white{
+    color: white;
+}
+
+.nav-main ul li > a{
+    color: grey;
+    text-decoration: none;
+}
+
+.upgrade-bar a{
+    color:;
+}
+i{
+    font-size: 25px;
+    color: #d2d2d2;
+}
+
+.download{
+    border-bottom: 1px solid grey;
+
+}
+
+.btn a{
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 50px;
+    border: 1px solid white;
+    color: white;
 }
