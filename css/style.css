@@ -17,7 +17,7 @@ body{
 }
 
 .left-bar{
-    width: 15%;
+    width: 10%;
     display: flex;
     flex-direction: column;
     background-color: #000000;
@@ -29,8 +29,8 @@ h3{
     color: white;
 }
 
-.content{
-    width: 85%;
+.music{
+    width: 90%;
     display: flex;
     flex-direction: column;
 }
@@ -49,6 +49,7 @@ h3{
     height: 90%;
     background-color: #141922;
     overflow-y: scroll;
+    padding: 0 40px 0 20px;
 }
 
 .nav-footer{
@@ -73,6 +74,18 @@ ul{
 
 li{
     padding-bottom: 15px;
+    padding-right: 25px;
+}
+
+
+ul li > a{
+    text-decoration: none;
+    color: grey;
+}
+
+.nav-playlist ul li{
+    display: inline-block;
+    padding-top: 20px;
 }
 
 .grey{
@@ -83,10 +96,6 @@ li{
     color: white;
 }
 
-.nav-main ul li > a{
-    color: grey;
-    text-decoration: none;
-}
 
 .upgrade-bar a{
     color:;
@@ -108,4 +117,32 @@ i{
     border-radius: 50px;
     border: 1px solid white;
     color: white;
+}
+
+.nav-playlist{
+    text-align: center;
+}
+
+.content{
+
+}
+
+[class*="section-"]{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item{
+    width: 240px;
+    height: 240px;
+    background-color: red;
+}
+
+.content [class*="section-"] .item:last-of-type{
+    margin-right: 20px;
+}
+
+.section-artist > .item{
+    border-radius: 50%;
 }
