@@ -22,9 +22,9 @@
                 <div class="logo">
                     <img src="img/logo.svg" alt="">
                 </div>
-                <ul class="">
-                    <li>
-                        <a href="#"><i class="fas fa-home"></i>Home</a>
+                <ul>
+                    <li class="active">
+                        <a href="#" class="white"><i class="fas fa-home"></i>Home</a>
                     </li>
                     <li>
                         <a href="#"><i class="fas fa-search"></i>Cerca</a>
@@ -35,8 +35,8 @@
                 </ul>
                 <h3>PLAYLIST</h3>
                 <ul>
-                    <li>
-                        <a href="#">Crea playlist</a>
+                    <li id="create">
+                        <a href="#"><i id="" class="fas fa-plus-square"></class></i>Crea Playlist</a>
                     </li>
                     <li>
                         <a href="#">Nome playlist</a>
@@ -62,8 +62,8 @@
                 </ul>
         </div>
         <div class="nav-footer">
-            <div class="download grey">Installa app</div>
-            <div class="profile white">John Doe</div>
+            <div class="download grey"><i class="fas fa-arrow-circle-down"></i>Installa app</div>
+            <div class="profile white"><i class="fas fa-user-circle"></i>John Doe</div>
         </div>
     </div>
            <!-- Contenuto main  -->
@@ -78,7 +78,7 @@
             <div class="playlist">
                 <nav class="nav-playlist">
                     <ul>
-                        <li>
+                        <li class="active-down">
                             <a href="#">IN EVIDENZA</a>
                         </li>
                         <li>
@@ -101,32 +101,26 @@
                 <div class="content">
                     <h2>Recently played</h2>
                     <div class="section-recently">
-                        <div class="item"></div>
-                        <div class="item"></div>
-                        <div class="item"></div>
-                        <div class="item"></div>
-                        <div class="item"></div>
-                        <div class="item"></div>
+                        <div class="item"><img src="img/metal_lifting.jpg" alt=""></div>
+                        <div class="item"><img src="img/stranger.jpeg" alt=""></div>
+                        <div class="item"><img src="img/aquietplace.jpeg" alt=""></div>
+                        <div class="item"><img src="img/split.jpeg" alt=""></div>
+                        <div class="item"><img src="img/cure.jpeg" alt=""></div>
+                        <div class="item"><img src="img/sinister.jpeg" alt=""></div>
                     </div>
                     <h2>Creato per John Doe</h2>
-                    <h5>Più ascolti, più saranno i suggerimenti</h5>
+                    <h4>Più ascolti, più saranno i suggerimenti.</h4>
                     <div class="section-created-for">
-                        <div class="item"></div>
-                        <div class="item"></div>
-                        <div class="item"></div>
-                        <div class="item"></div>
-                        <div class="item"></div>
-                        <div class="item"></div>
+                        <div class="item"><img src="img/radar.jpeg" alt=""></div>
+                        <div class="item"><img src="img/mixdaily.jpeg" alt=""></div>
+
                     </div>
                     <h2>Artisti più popolari</h2>
-                    <h5>Più ascolti, più saranno i suggerimenti</h5>
+                    <h4>Più ascolti, più saranno i suggerimenti.</h4>
                     <div class="section-artist">
-                        <div class="item"></div>
-                        <div class="item"></div>
-                        <div class="item"></div>
-                        <div class="item"></div>
-                        <div class="item"></div>
-                        <div class="item"></div>
+                        <div class="item"><img class=".circle" src="img/radar.jpeg" alt=""></div>
+                        <div class="item"><img src="img/mixdaily.jpeg" alt=""></div>
+
                     </div>
                 </div>
             </div>
@@ -136,25 +130,31 @@
             <!-- Barra musica -->
             <div class="music-bar">
                 <div class="col-left">
-                    <div class="copertina">
+                    <div class="col-1">
+                        <div class="copertina">
+                        </div>
+                        <div class="title">
+                            <p>Sinister</p>
+                            <p>Brano nome</p>
+                        </div>
                     </div>
-                    <div>
-                        <p>Sinister</p>
-                        <p>Brano nome</p>
+                    <div class="col-2">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-folder"></i>
                     </div>
                 </div>
                 <div class="col-center">
                     <div class="button-bar">
                         <i class="fas fa-random"></i>
                         <i class="fas fa-step-backward"></i>
-                        <i class="far fa-play-circle"></i>
+                        <i id="play" class="far fa-play-circle"></i>
                         <i class="fas fa-step-forward"></i>
                         <i class="fas fa-random"></i>
                     </div>
                     <div class="bar-music">
-                        <span>0:25</span>
-                        <div class="bars"></div>
-                        <span>4:35</span>
+                        <span class="white">0:25</span>
+                        <div class="bars"><div class="inside-bar"></div></div>
+                        <span class="white">4:35</span>
                     </div>
                     <div class="col-right">
                         
@@ -164,7 +164,7 @@
                     <i class="fas fa-book"></i>
                     <i class="fas fa-desktop"></i>
                     <i class="fas fa-volume-up"></i>
-                    <div class="line"></div>
+                    <div class="line"><div class="inside-bar"></div></div>
                 </div>
             </div>
         </footer>
