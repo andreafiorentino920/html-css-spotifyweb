@@ -8,25 +8,26 @@
 /* Body  */
 body{
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: bold;
 }
 
 .container{
-    height: 85vh;
+    height: calc(100vh - 100px);
     display: flex;
 }
 
 .left-bar{
     width: 15%;
     height: 100%;
+    background-color: #000000;
+    padding-left:20px;
+
+}
+.nav-main{
     display: flex;
     flex-direction: column;
-    background-color: #000000;
-    padding:20px 20px 0 20px;
-    justify-content: space-between;
-}
-
+ }
 h3{
     color: white;
 }
@@ -46,7 +47,7 @@ h3{
 }
 
 #create i{
-    font-size: 60px;
+    font-size: 35px;
 
 }
 
@@ -244,9 +245,6 @@ i{
     padding-top: 45px;
 }
 
-a{
-    font-size: 10px;
-}
 i{
     font-size: 20px;
 }
@@ -319,11 +317,6 @@ i{
 
 }
 
-.nav-main > ul:first-of-type > li:first-child{
-    border-left: 2px solid greenyellow;
-    padding-left: 10px ;
-}
-
 .item:hover img{
     content: "\f144";
     font-family: "Font Awesome 5 Free";
@@ -336,7 +329,9 @@ i{
     background-color: red;
 }
 footer{
-    height: 15vh;
+    height: 100px;
+    width: 100%;
+    position: fixed;
 }
 /* 
 Media query xs-screen */
