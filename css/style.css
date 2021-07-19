@@ -13,7 +13,7 @@ body{
 }
 
 .container{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 10px);
     display: flex;
 }
 
@@ -344,6 +344,19 @@ Media query xs-screen */
         margin-right: 10px;
     }
 
+    @media screen and (max-width:700px){
+        .left-bar{
+            width: 35%;
+        }
+
+        .music{
+            width: 65%;
+        }
+
+        .item{
+            width: calc(50% - 10px);
+        }
+    }
 
 
 
