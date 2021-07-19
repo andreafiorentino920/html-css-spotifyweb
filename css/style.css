@@ -13,7 +13,7 @@ body{
 }
 
 .container{
-    height: calc(100vh - 10px);
+    height: calc(100vh - 100px);
     display: flex;
 }
 
@@ -186,8 +186,7 @@ i{
 .col-center{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 60%;
+    align-items: center;;
 }
 
 .col-right{
@@ -205,6 +204,7 @@ i{
 }
 
 .bar-music{
+    width: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -216,7 +216,7 @@ i{
     align-items: center;
 }
 .bars{
-    width: 600px;
+    width: 80%;
     height: 7px;
     background-color: #5a5a5a;
     justify-content: space-between;
@@ -239,7 +239,7 @@ i{
     border-radius: 7px;
 }
 
-.content h2{
+.content h1{
     color: white;
     padding-bottom: 25px;
     padding-top: 45px;
@@ -256,7 +256,7 @@ i{
 
 .title{
     padding-left: 10px;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 
 .title p:first-child{
@@ -287,6 +287,7 @@ i{
 .col-1{
     display: flex;
 }
+
 
 .download > i, .profile > i{
     padding-right: 10px;
@@ -343,6 +344,7 @@ Media query xs-screen */
         width: calc(25% - 10px);
         margin-right: 10px;
     }
+}
 
     @media screen and (max-width:700px){
         .left-bar{
@@ -356,26 +358,33 @@ Media query xs-screen */
         .item{
             width: calc(50% - 10px);
         }
+        .bars{
+            width: 150px;
+        }
     }
 
-
-
-    /* .left-bar{
+@media screen and (max-width:600px){
+    .left-bar{
         width: 10%;
+        display: flex;
+        padding: 5px;
+        justify-content: center;
+     }    
+     .left-bar li{
+         padding: 0;
+     }
+     .music{
+         width: 90%;
+     }
+     .left-bar ul li a, .logo > img, .main-up h3, #create, .main-down{
+        display: none;
     }
+
     .logo{
-        display: none;
+        margin-top: 5px;
+        width: 25px;
+        height: 25px;
+        color: white;
+        background-image: url(../img/logo-small.svg);
     }
-    .nav-main > ul > li a{
-        display: none;
-    }
-    body{
-        height: 100vh;
-    }
-    footer{
-        height: 20vh;
-    }
-    main{
-        height: 80vh;
-    }
-    } */
+}
